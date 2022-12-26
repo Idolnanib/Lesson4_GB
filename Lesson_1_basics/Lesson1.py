@@ -8,3 +8,4 @@
 # for num in reversed(my_list):
 #     print(num)
 
+d
