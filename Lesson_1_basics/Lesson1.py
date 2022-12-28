@@ -170,3 +170,49 @@
 #         sum_in_list_of_numbers = sum_in_list_of_numbers + num
 #
 # print(sum_in_list_of_numbers)
+
+# 3.Склонение слова
+# Реализовать склонение слова «процент» во фразе «N процентов».
+# Вывести эту фразу на экран отдельной строкой для каждого из чисел в интервале от 1 до 100:
+# 1 процент
+# 2 процента
+# 3 процента
+# 4 процента
+# 5 процентов
+# 6 процентов
+# ...
+# 100 процентов
+
+user_input = 0
+while user_input != 1:
+
+    num = int(input('введи число для процента: '))
+
+    list_of_numbers = []
+
+    list_of_numbers = [int(n_num) for n_num in str(num)]
+
+    print(list_of_numbers)
+
+    if list_of_numbers[-1] == 1:
+        print(num, 'процент')
+    if list_of_numbers[-1] == 0:
+        print(num, 'процентов')
+    if list_of_numbers[-1] == 2:
+        print(num, 'процента')
+    if list_of_numbers[-1] == 3:
+        print(num, 'процента')
+    if list_of_numbers[-1] == 4:
+        print(num, 'процента')
+    if list_of_numbers[-1] == 5:
+        print(num, 'процентов')
+    if list_of_numbers[-1] == 6:
+        print(num, 'процентов')
+    if list_of_numbers[-1] == 7:
+        print(num, 'процентов')
+    if list_of_numbers[-1] == 8:
+        print(num, 'процентов')
+    if list_of_numbers[-1] == 9:
+        print(num, 'процентов')
+
+    user_input = int(input('1 - Выход. Все остальное продолжить ...'))
