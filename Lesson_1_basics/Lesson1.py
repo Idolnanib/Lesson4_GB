@@ -42,74 +42,79 @@
 # 4 дн 15 час 9 мин 13 сек
 
 
-duration = int(input('Введи количество секунд всего: '))
+# duration = int(input('Введи количество секунд всего: '))
+#
+# minute = 0
+# hour = 0
+# day = 0
+# second = 0
+#
+# if duration // 86400 > 0:
+#     day = duration // 86400
+#     duration = duration - day * 86400
+#     if duration // 3600 > 0:
+#         hour = duration // 3600
+#         duration = duration - hour * 3600
+#         if duration // 60 > 0:
+#             minute = duration // 60
+#             duration = duration - minute * 60
+#             second = duration
+#             print('day = ', day)
+#             print('hour = ', hour)
+#             print('minute = ', minute)
+#             print('second = ', second)
+#         else:
+#             second = duration
+#             print('day = ', day)
+#             print('hour = ', hour)
+#             print('minute = ', minute)
+#             print('second = ', second)
+#     else:
+#         if duration // 60 > 0:
+#             minute = duration // 60
+#             duration = duration - minute * 60
+#             second = duration
+#             print('day = ', day)
+#             print('hour = ', hour)
+#             print('minute = ', minute)
+#             print('second = ', second)
+#         else:
+#             second = duration
+#             print('day = ', day)
+#             print('hour = ', hour)
+#             print('minute = ', minute)
+#             print('second = ', second)
+#
+#
+# elif duration // 3600 > 0:
+#     hour = duration // 3600
+#     duration = duration - hour * 3600
+#     if duration // 60 > 0:
+#         minute = duration // 60
+#         duration = duration - minute * 60
+#         second = duration
+#         print('hour = ', hour)
+#         print('minute = ', minute)
+#         print('second = ', second)
+#     else:
+#         second = duration
+#         print('hour = ', hour)
+#         print('minute = ', minute)
+#         print('second = ', second)
+# elif duration // 60 > 0:
+#     minute = duration // 60
+#     duration = duration - minute * 60
+#     second = duration
+#     print('minute = ', minute)
+#     print('second = ', second)
+# else:
+#     second = duration
+#     print('second = ', second)
 
-minute = 0
-hour = 0
-day = 0
-second = 0
-
-if duration // 86400 > 0:
-    day = duration // 86400
-    duration = duration - day * 86400
-    if duration // 3600 > 0:
-        hour = duration // 3600
-        duration = duration - hour * 3600
-        if duration // 60 > 0:
-            minute = duration // 60
-            duration = duration - minute * 60
-            second = duration
-            print('day = ', day)
-            print('hour = ', hour)
-            print('minute = ', minute)
-            print('second = ', second)
-        else:
-            second = duration
-            print('day = ', day)
-            print('hour = ', hour)
-            print('minute = ', minute)
-            print('second = ', second)
-    else:
-        if duration // 60 > 0:
-            minute = duration // 60
-            duration = duration - minute * 60
-            second = duration
-            print('day = ', day)
-            print('hour = ', hour)
-            print('minute = ', minute)
-            print('second = ', second)
-        else:
-            second = duration
-            print('day = ', day)
-            print('hour = ', hour)
-            print('minute = ', minute)
-            print('second = ', second)
-
-
-elif duration // 3600 > 0:
-    hour = duration // 3600
-    duration = duration - hour * 3600
-    if duration // 60 > 0:
-        minute = duration // 60
-        duration = duration - minute * 60
-        second = duration
-        print('hour = ', hour)
-        print('minute = ', minute)
-        print('second = ', second)
-    else:
-        second = duration
-        print('hour = ', hour)
-        print('minute = ', minute)
-        print('second = ', second)
-elif duration // 60 > 0:
-    minute = duration // 60
-    duration = duration - minute * 60
-    second = duration
-    print('minute = ', minute)
-    print('second = ', second)
-else:
-    second = duration
-    print('second = ', second)
+import datetime
+duration= 10000000
+time_format = str(datetime.timedelta(seconds = duration))
+print("Time in preferred format :-",time_format)
 
 
 
