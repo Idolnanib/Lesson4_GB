@@ -111,15 +111,62 @@
 #     second = duration
 #     print('second = ', second)
 
-import datetime
-duration= 10000000
-time_format = str(datetime.timedelta(seconds = duration))
-print("Time in preferred format :-",time_format)
+# import datetime
+# duration= 10000000
+# time_format = str(datetime.timedelta(seconds = duration))
+# print("Time in preferred format :-",time_format)
 
 
 
 
 # 2. Создать список, состоящий из кубов нечётных чисел от 1 до 1000 (куб X - третья степень числа X):
-# Вычислить сумму тех чисел из этого списка, сумма цифр которых делится нацело на 7. Например, число «19 ^ 3 = 6859» будем включать в сумму, так как 6 + 8 + 5 + 9 = 28 – делится нацело на 7. Внимание: использовать только арифметические операции!
-# К каждому элементу списка добавить 17 и заново вычислить сумму тех чисел из этого списка, сумма цифр которых делится нацело на 7.
+# Вычислить сумму тех чисел из этого списка, сумма цифр которых делится нацело на 7.
+# Например, число «19 ^ 3 = 6859» будем включать в сумму, так как 6 + 8 + 5 + 9 = 28 – делится нацело на 7.
+# Внимание: использовать только арифметические операции!
+# К каждому элементу списка добавить 17 и заново вычислить сумму тех чисел из этого списка,
+# сумма цифр которых делится нацело на 7.
 # * Решить задачу под пунктом b, не создавая новый список.
+
+# list_of_numbers = []
+# sum_in_list_of_dismemberments = 0
+# sum_in_list_of_numbers = 0
+#
+# for num in range(1, 1001):
+#     if num % 2 > 0:
+#         list_of_numbers.append(num ** 3)
+#
+# for num in list_of_numbers:
+#     list_of_dismemberments = [int(n_num) for n_num in str(num)]
+#     for n_num in list_of_dismemberments:
+#         sum_in_list_of_dismemberments = sum_in_list_of_dismemberments + n_num
+#     if sum_in_list_of_dismemberments % 7 == 0:
+#         sum_in_list_of_numbers = sum_in_list_of_numbers + num
+#
+# print(sum_in_list_of_numbers)
+#
+# for num in range(1, 1001):
+#     if num % 2 > 0:
+#         list_of_numbers.append(num ** 3 + 17)
+#
+# for num in list_of_numbers:
+#     list_of_dismemberments = [int(n_num) for n_num in str(num)]
+#     for n_num in list_of_dismemberments:
+#         sum_in_list_of_dismemberments = sum_in_list_of_dismemberments + n_num
+#     if sum_in_list_of_dismemberments % 7 == 0:
+#         sum_in_list_of_numbers = sum_in_list_of_numbers + num
+#
+# print(sum_in_list_of_numbers)
+
+
+#
+# for num in range(1, 1001):
+#     if num % 2 > 0:
+#         list_of_numbers.append(num ** 3 )
+#
+# for num in list_of_numbers:
+#     for i in range(0, len(str(num))):
+#         sum_in_list_of_dismemberments = sum_in_list_of_dismemberments + i
+#     if sum_in_list_of_dismemberments % 7 == 0:
+#         sum_in_list_of_numbers = sum_in_list_of_numbers + num
+#
+# print(sum_in_list_of_numbers)
